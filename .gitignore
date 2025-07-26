@@ -1,0 +1,55 @@
+# -----------------------
+# Allgemein
+# -----------------------
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.bak
+
+# -----------------------
+# Docker
+# -----------------------
+# Compose generierte Dateien
+docker-compose.override.yml
+docker-compose.override.*.yml
+
+# Docker Build
+.docker/
+.dockerignore
+
+# Docker Volumes (falls lokale persistente Volumes im Repo liegen)
+data/
+volumes/
+tmp/
+cache/
+
+# -----------------------
+# Environment Files
+# -----------------------
+.env
+.env.*
+!env.example   # Falls du ein Beispiel-Env behalten möchtest
+
+# -----------------------
+# Node/Frontend (falls mal verwendet)
+# -----------------------
+node_modules/
+dist/
+build/
+.npm/
+
+# -----------------------
+# IDE & OS
+# -----------------------
+.vscode/
+.idea/
+*.iml
+
+# -----------------------
+# Backup Files
+# -----------------------
+*.old
+*.save
+*.orig
